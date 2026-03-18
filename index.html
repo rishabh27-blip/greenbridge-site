@@ -112,7 +112,6 @@
       color:var(--blue);
       text-decoration:none;
     }
-    .mobile-toggle{display:none}
 
     /* Hero */
     .hero{
@@ -274,10 +273,7 @@
       font-size:13px;
     }
     .checklist li:last-child{border-bottom:none}
-    .check{
-      color:var(--green);
-      margin-top:2px;
-    }
+    .check{color:var(--green); margin-top:2px}
 
     /* FAQ */
     #faq{background:var(--panel)}
@@ -304,10 +300,7 @@
       gap:18px;
       align-items:start;
     }
-    form{
-      display:grid;
-      gap:12px;
-    }
+    form{display:grid; gap:12px}
     label{font-size:12px; font-weight:700; color:#0b1220}
     input, select, textarea{
       width:100%;
@@ -318,12 +311,12 @@
       font-size:14px;
       outline:none;
     }
-    input:focus, select:focus, textarea:focus{border-color:rgba(30,60,114,.6); box-shadow:0 0 0 4px rgba(30,60,114,.10)}
-    textarea{min-height:120px; resize:vertical}
-    .contact-details{
-      display:grid;
-      gap:12px;
+    input:focus, select:focus, textarea:focus{
+      border-color:rgba(30,60,114,.6);
+      box-shadow:0 0 0 4px rgba(30,60,114,.10)
     }
+    textarea{min-height:120px; resize:vertical}
+    .contact-details{display:grid; gap:12px}
     .info{
       display:flex; gap:12px;
       align-items:flex-start;
@@ -398,7 +391,6 @@
     }
     @media (max-width: 720px){
       .menu{display:none}
-      .mobile-toggle{display:inline-flex}
       .nav-cta .phone{display:none}
       .problems .card, .services .card, .stories .card, .process .card{grid-column:span 12}
       .trust-strip{grid-template-columns:1fr}
@@ -494,7 +486,7 @@
     </div>
   </section>
 
-  <!-- About (short, corporate) -->
+  <!-- About -->
   <section id="about" aria-label="About">
     <div class="container">
       <div class="section-head">
@@ -512,7 +504,7 @@
     </div>
   </section>
 
-  <!-- Problem / Pain Points -->
+  <!-- Problems -->
   <section id="problems" aria-label="Problems" class="problems">
     <div class="container">
       <div class="section-head">
@@ -704,10 +696,7 @@
 
       <div class="grid">
         <div class="card">
-          <div class="step">
-            <strong>Step 1</strong>
-            <span>Diagnose</span>
-          </div>
+          <div class="step"><strong>Step 1</strong><span>Diagnose</span></div>
           <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
           <h3>Diagnose</h3>
           <ul>
@@ -718,10 +707,7 @@
         </div>
 
         <div class="card">
-          <div class="step">
-            <strong>Step 2</strong>
-            <span>Plan</span>
-          </div>
+          <div class="step"><strong>Step 2</strong><span>Plan</span></div>
           <div class="icon"><i class="fa-solid fa-map"></i></div>
           <h3>Plan</h3>
           <ul>
@@ -732,10 +718,7 @@
         </div>
 
         <div class="card">
-          <div class="step">
-            <strong>Step 3</strong>
-            <span>Execute</span>
-          </div>
+          <div class="step"><strong>Step 3</strong><span>Execute</span></div>
           <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
           <h3>Execute</h3>
           <ul>
@@ -746,10 +729,7 @@
         </div>
 
         <div class="card">
-          <div class="step">
-            <strong>Step 4</strong>
-            <span>Get Approval</span>
-          </div>
+          <div class="step"><strong>Step 4</strong><span>Get Approval</span></div>
           <div class="icon"><i class="fa-solid fa-certificate"></i></div>
           <h3>Get Approval</h3>
           <ul>
@@ -855,8 +835,12 @@
       <div class="contact-wrap">
         <div class="card">
           <h3 style="margin-top:0;">Free Consultation Form</h3>
-          <!-- Note: This is a front-end only form. Connect to your backend or a form service to receive submissions. -->
-          <form onsubmit="event.preventDefault(); alert('Thanks! Please connect this form to email/backend to receive submissions.');">
+
+          <!-- UPDATED: Formspree-connected form -->
+          <form action="https://formspree.io/f/xreyrrpe" method="POST">
+            <input type="hidden" name="_subject" value="New Free Consultation Lead - GreenBridge Consultants">
+            <input type="hidden" name="_redirect" value="thank-you.html">
+
             <div>
               <label for="name">Name</label>
               <input id="name" name="name" placeholder="Your full name" required />
@@ -893,45 +877,35 @@
             <button class="btn btn-primary" type="submit">
               <i class="fa-solid fa-paper-plane"></i> Request Consultation
             </button>
+
+            <p style="margin:10px 0 0; font-size:12px; color:var(--muted);">
+              By submitting, you agree to be contacted by GreenBridge Consultants.
+            </p>
           </form>
         </div>
 
         <div class="contact-details">
           <div class="info">
             <i class="fa-solid fa-phone"></i>
-            <div>
-              <strong style="color:#0b1220;">Phone</strong><br>
-              +91-XXXXXXXXXX
-            </div>
+            <div><strong style="color:#0b1220;">Phone</strong><br>+91-XXXXXXXXXX</div>
           </div>
 
           <div class="info">
             <i class="fa-solid fa-envelope"></i>
-            <div>
-              <strong style="color:#0b1220;">Email</strong><br>
-              hello@greenbridgeconsultants.in
-            </div>
+            <div><strong style="color:#0b1220;">Email</strong><br>hello@greenbridgeconsultants.in</div>
           </div>
 
           <div class="info">
             <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <strong style="color:#0b1220;">Address</strong><br>
-              Punjab, India
-            </div>
+            <div><strong style="color:#0b1220;">Address</strong><br>Punjab, India</div>
           </div>
 
           <div class="info">
             <i class="fa-solid fa-clock"></i>
-            <div>
-              <strong style="color:#0b1220;">Business Hours</strong><br>
-              Mon–Sat, 9:00 AM – 6:00 PM
-            </div>
+            <div><strong style="color:#0b1220;">Business Hours</strong><br>Mon–Sat, 9:00 AM – 6:00 PM</div>
           </div>
 
-          <div class="map" aria-label="Map placeholder">
-            Map placeholder (embed Google Map here)
-          </div>
+          <div class="map" aria-label="Map placeholder">Map placeholder (embed Google Map here)</div>
         </div>
       </div>
     </div>
