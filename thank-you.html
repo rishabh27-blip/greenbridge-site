@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thank You | GreenBridge Consultants</title>
+  <meta name="theme-color" content="#1e3c72" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root{
+      --blue:#1e3c72;
+      --green:#2e7d32;
+      --ink:#0f172a;
+      --muted:#475569;
+      --bg:#ffffff;
+      --border:#e2e8f0;
+      --radius: 16px;
+      --max: 960px;
+      --shadow: 0 14px 40px rgba(2, 6, 23, .10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:linear-gradient(135deg, rgba(30,60,114,1), rgba(46,125,50,.95));
+      color:#fff;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+    }
+    .container{max-width:var(--max); margin:0 auto; padding:28px 20px; width:100%}
+    .card{
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .logo{
+      width:52px; height:52px;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--blue), var(--green));
+      display:grid; place-items:center;
+      font-weight:800;
+      letter-spacing:.6px;
+      margin-bottom:14px;
+    }
+    h1{margin:0 0 8px; font-size:32px; line-height:1.2}
+    p{margin:0; color:rgba(255,255,255,.92)}
+    .row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.35);
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      font-weight:700;
+      text-decoration:none;
+      transition:.2s ease;
+      cursor:pointer;
+    }
+    .btn:hover{background:rgba(255,255,255,.16); transform:translateY(-1px)}
+    .btn-primary{
+      border-color:transparent;
+      background:var(--green);
+    }
+    .btn-primary:hover{filter:brightness(.96)}
+    .small{
+      margin-top:16px;
+      font-size:12px;
+      opacity:.85;
+    }
+    .divider{
+      height:1px;
+      background:rgba(255,255,255,.18);
+      margin:18px 0;
+    }
+    .details{
+      display:grid;
+      gap:10px;
+      margin-top:12px;
+      color:rgba(255,255,255,.92);
+      font-size:13px;
+    }
+    .details div{display:flex; gap:10px; align-items:flex-start}
+    .details i{margin-top:3px}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo" aria-label="Logo placeholder">GB</div>
+
+      <h1>Thank you — we received your request.</h1>
+      <p>
+        A member of GreenBridge Consultants will review your details and get back to you shortly.
+        If you shared rejection history, we will start by identifying the exact gaps and next steps.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="details" aria-label="What happens next">
+        <div><i class="fa-solid fa-circle-check"></i> <span><strong>Next:</strong> We review your industry type, CTO/CTE status, and documents.</span></div>
+        <div><i class="fa-solid fa-circle-check"></i> <span><strong>Then:</strong> You get a clear action plan and expected timeline.</span></div>
+        <div><i class="fa-solid fa-circle-check"></i> <span><strong>Goal:</strong> Move your case from rejection to approval with structured follow-up.</span></div>
+      </div>
+
+      <div class="row">
+        <a class="btn btn-primary" href="index.html#contact">
+          <i class="fa-solid fa-arrow-left"></i> Back to Contact
+        </a>
+        <a class="btn" href="index.html">
+          <i class="fa-solid fa-house"></i> Back to Home
+        </a>
+      </div>
+
+      <div class="small">
+        If this is urgent, call: +91-XXXXXXXXXX (update with your real number).
+      </div>
+    </div>
+  </div>
+</body>
+</html>
