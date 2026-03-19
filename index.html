@@ -819,97 +819,98 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" aria-label="Contact">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="kicker">Contact</div>
-          <h2>Get Your Approval Today</h2>
-          <p class="sub">
-            Share your industry type, current status, and any rejection history. We will respond with a clear next step.
-          </p>
-        </div>
-      </div>
-
-      <div class="contact-wrap">
-        <div class="card">
-          <h3 style="margin-top:0;">Free Consultation Form</h3>
-
-          <!-- Formspree (correct URL + GitHub Pages-safe redirect) -->
-          <form action="https://formspree.io/f/xreyjbwp" method="POST">
-            <input type="hidden" name="_subject" value="New Consultation Lead - GreenBridge Consultants">
-            <input type="hidden" name="_redirect" value="https://rishabh27-blip.github.io/greenbridge-site/thank-you.html">
-
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" placeholder="Your full name" required />
-            </div>
-
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@company.com" required />
-            </div>
-
-            <div>
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required />
-            </div>
-
-            <div>
-              <label for="industry">Industry Type</label>
-              <select id="industry" name="industry" required>
-                <option value="" selected disabled>Select your industry</option>
-                <option>Vegetable Oil / Food Processing</option>
-                <option>Steel / Metal</option>
-                <option>Hospital / Biomedical Waste</option>
-                <option>Hotel / Hospitality</option>
-                <option>Manufacturing</option>
-                <option>Other</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us your current situation (CTE/CTO), rejection notes, and timeline."></textarea>
-            </div>
-
-            <button class="btn btn-primary" type="submit">
-              <i class="fa-solid fa-paper-plane"></i> Request Consultation
-            </button>
-
-            <p style="margin:10px 0 0; font-size:12px; color:var(--muted);">
-              By submitting, you agree to be contacted by GreenBridge Consultants.
-            </p>
-          </form>
-        </div>
-
-        <div class="contact-details">
-          <div class="info">
-            <i class="fa-solid fa-phone"></i>
-            <div><strong style="color:#0b1220;">Phone</strong><br>+91-7814818513</div>
-          </div>
-
-          <div class="info">
-            <i class="fa-solid fa-envelope"></i>
-            <div><strong style="color:#0b1220;">Email</strong><br>consultantsgreenbridge@gmail.com</div>
-          </div>
-
-          <div class="info">
-            <i class="fa-solid fa-location-dot"></i>
-            <div><strong style="color:#0b1220;">Address</strong><br>Punjab, India</div>
-          </div>
-
-          <div class="info">
-            <i class="fa-solid fa-clock"></i>
-            <div><strong style="color:#0b1220;">Business Hours</strong><br>Mon–Sat, 9:00 AM – 6:00 PM</div>
-          </div>
-
-          <div class="map" aria-label="Map placeholder">Map placeholder (embed Google Map here)</div>
-        </div>
+ <!-- Contact -->
+<section id="contact" aria-label="Contact">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Contact</div>
+        <h2>Get Your Approval Today</h2>
+        <p class="sub">
+          Share your industry type, current status, and any rejection history. We will respond with a clear next step.
+        </p>
       </div>
     </div>
-  </section>
+
+    <div class="contact-wrap">
+      <div class="card">
+        <h3 style="margin-top:0;">Free Consultation Form</h3>
+
+        <!-- FIXED Formspree form with correct redirect -->
+        <form action="https://formspree.io/f/xreyjbwp" method="POST">
+          <input type="hidden" name="_subject" value="New Consultation Lead - GreenBridge Consultants">
+          <!-- IMPORTANT: This is the correct format for redirect -->
+          <input type="hidden" name="_next" value="https://rishabh27-blip.github.io/greenbridge-site/thank-you.html">
+
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your full name" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required />
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" placeholder="+91-7814818513" required />
+          </div>
+
+          <div>
+            <label for="industry">Industry Type</label>
+            <select id="industry" name="industry" required>
+              <option value="" selected disabled>Select your industry</option>
+              <option>Vegetable Oil / Food Processing</option>
+              <option>Steel / Metal</option>
+              <option>Hospital / Biomedical Waste</option>
+              <option>Hotel / Hospitality</option>
+              <option>Manufacturing</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us your current situation (CTE/CTO), rejection notes, and timeline."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Request Consultation
+          </button>
+
+          <p style="margin:10px 0 0; font-size:12px; color:var(--muted);">
+            By submitting, you agree to be contacted by GreenBridge Consultants.
+          </p>
+        </form>
+      </div>
+
+      <div class="contact-details">
+        <div class="info">
+          <i class="fa-solid fa-phone"></i>
+          <div><strong style="color:#0b1220;">Phone</strong><br>+91-7814818513</div>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-envelope"></i>
+          <div><strong style="color:#0b1220;">Email</strong><br>consultantsgreenbridge@gmail.com</div>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong style="color:#0b1220;">Address</strong><br>Punjab, India</div>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-clock"></i>
+          <div><strong style="color:#0b1220;">Business Hours</strong><br>Mon–Sat, 9:00 AM – 6:00 PM</div>
+        </div>
+
+        <div class="map" aria-label="Map placeholder">Map placeholder (embed Google Map here)</div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer aria-label="Footer">
