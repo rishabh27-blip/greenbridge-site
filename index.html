@@ -6,7 +6,7 @@
   <title>GreenBridge Consultants | PPCB(Punjab Pollution Control Board) CTO/CTE Approvals Punjab</title>
 
   <meta name="description" content="GreenBridge Consultants helps industrial units in Punjab with PPCB consent approvals (CTO/CTE), especially after multiple rejections. Professional environmental compliance consulting." />
-  <meta name="keywords" content="PPCB consultant Punjab, CTO approval consultant, Consent to operate Punjab, Environmental compliance consultant, PPCB rejection help, Industrial approval consultant Punjab" />
+  <meta name="keywords" content="PPCB consultant Punjab, CTO approval consultant, Consent to operate Punjab, Environmental compliance consultant, PPCB rejection help, Industrial approval consultant Punjab, rice mill PPCB, dyeing unit compliance, textile PPCB Punjab" />
   <meta name="theme-color" content="#1e3c72" />
 
   <!-- Fonts -->
@@ -158,11 +158,6 @@
     }
     .hero-card h3{margin:0 0 8px; font-size:16px}
     .hero-card ul{margin:0; padding-left:18px; color:rgba(255,255,255,.92); font-size:13px}
-    .hero-bg-note{
-      margin-top:12px;
-      font-size:12px;
-      opacity:.85;
-    }
 
     /* Sections */
     section{padding:64px 0}
@@ -230,22 +225,28 @@
       font-weight:700;
     }
 
-    /* Success stories */
-    #stories{background:var(--panel)}
-    .stories .card{grid-column:span 4}
-    .story-meta{
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top:10px;
+    /* First clients banner */
+    .first-clients-banner{
+      background:linear-gradient(135deg, rgba(30,60,114,.06), rgba(46,125,50,.08));
+      border:1px solid rgba(46,125,50,.25);
+      border-radius:var(--radius);
+      padding:24px 28px;
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
     }
-    .pill{
-      font-size:12px;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:#fff;
-      color:var(--muted);
-      display:inline-flex; gap:8px; align-items:center;
+    .first-clients-banner .icon{
+      width:52px; height:52px;
+      border-radius:16px;
+      background:rgba(46,125,50,.12);
+      display:grid; place-items:center;
+      color:var(--green);
+      font-size:22px;
+      flex-shrink:0;
     }
+    .first-clients-banner h3{margin:0 0 4px; font-size:17px; color:var(--ink)}
+    .first-clients-banner p{margin:0; font-size:13px; color:var(--muted)}
 
     /* Process */
     .process .card{grid-column:span 3}
@@ -383,7 +384,6 @@
       .hero h1{font-size:36px}
       .problems .card{grid-column:span 6}
       .services .card{grid-column:span 6}
-      .stories .card{grid-column:span 6}
       .process .card{grid-column:span 6}
       .why{grid-template-columns: 1fr}
       .contact-wrap{grid-template-columns: 1fr}
@@ -392,7 +392,7 @@
     @media (max-width: 720px){
       .menu{display:none}
       .nav-cta .phone{display:none}
-      .problems .card, .services .card, .stories .card, .process .card{grid-column:span 12}
+      .problems .card, .services .card, .process .card{grid-column:span 12}
       .trust-strip{grid-template-columns:1fr}
     }
   </style>
@@ -404,7 +404,7 @@
     <div class="container">
       <nav class="nav" aria-label="Primary navigation">
         <a class="brand" href="#home">
-          <div class="logo" aria-label="Logo placeholder">GB</div>
+          <div class="logo" aria-label="Logo">GB</div>
           <div>
             <strong>GreenBridge Consultants</strong>
             <span>Turning Rejections into Approvals | PPCB Specialists</span>
@@ -415,7 +415,7 @@
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
-          <a href="#stories">Success Stories</a>
+          <a href="#industries">Industries</a>
           <a href="#contact">Contact</a>
         </div>
 
@@ -436,50 +436,46 @@
     <div class="container">
       <div class="hero-wrap">
         <div>
-          <div class="chip"><i class="fa-solid fa-leaf"></i> PPCB consultant Punjab • CTO/CTE approvals</div>
+          <div class="chip"><i class="fa-solid fa-leaf"></i> PPCB consultant Punjab &bull; CTO/CTE approvals</div>
           <h1>PPCB Approvals Made Simple</h1>
           <p>
-            We help industrial units in Punjab get their Consent to Operate (CTO) and Consent to Establish (CTE)
-            approvals — even after multiple rejections. If you need PPCB rejection help, we bring a clear plan and
-            steady follow-up.
+            We help rice mills, dyeing units, textile processors, and industrial units across Punjab get their
+            Consent to Operate (CTO) approved — even after multiple rejections. Based in Ludhiana.
           </p>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">
               <i class="fa-solid fa-comments"></i> Get Free Consultation
             </a>
-            <a class="btn btn-secondary" href="#stories">
-              <i class="fa-solid fa-award"></i> View Success Stories
+            <a class="btn btn-secondary" href="https://wa.me/917814818513?text=Hello%20GreenBridge%2C%20I%20need%20help%20with%20my%20PPCB%20consent." target="_blank">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us Now
             </a>
           </div>
 
           <div class="trust-strip" aria-label="Trust signals">
             <div class="counter">
-              <strong>Founded 2024</strong>
-              <span>Fresh perspective on environmental compliance</span>
+              <strong>Ludhiana Based</strong>
+              <span>Serving Tajpur Road, Focal Point, Jagraon &amp; surrounding areas</span>
             </div>
             <div class="counter">
-              <strong>Data-Driven Analysis</strong>
-              <span>Specialized in understanding rejection patterns</span>
+              <strong>Data-Driven</strong>
+              <span>We analyse OCMMS rejection patterns to fix the exact problem</span>
             </div>
             <div class="counter">
-              <strong>Punjab Focus</strong>
-              <span>Consent to operate Punjab • consent workflows & inspections</span>
+              <strong>Rice Mills &amp; Dyeing Units</strong>
+              <span>Specialists in Orange &amp; Red category industrial compliance</span>
             </div>
-          </div>
-
-          <div class="hero-bg-note">
-            Background image suggestion: use a professional industrial area/factory image (hero banner).
           </div>
         </div>
 
         <aside class="hero-card" aria-label="Quick value card">
           <h3>What you get with GreenBridge</h3>
           <ul>
-            <li>Clear diagnosis of rejection reasons and compliance gaps</li>
-            <li>CTO approval consultant support end-to-end</li>
-            <li>Documentation + inspection readiness checklist</li>
-            <li>Structured PPCB follow-up until closure</li>
+            <li>Free diagnosis of why your CTO keeps getting rejected</li>
+            <li>Complete document preparation — coloured site plan, ETP certificate, CA affidavit</li>
+            <li>End-to-end OCMMS portal filing and follow-up</li>
+            <li>On-site support during PPCB inspection visit</li>
+            <li>Monthly retainer to maintain compliance after approval</li>
           </ul>
         </aside>
       </div>
@@ -492,14 +488,19 @@
       <div class="section-head">
         <div>
           <div class="kicker">About</div>
-          <h2>Environmental Compliance Consultant for Punjab Industries</h2>
+          <h2>Environmental Compliance Consultants — Ludhiana, Punjab</h2>
           <p class="sub">
-            GreenBridge Consultants supports industrial units in Punjab with PPCB consent approvals (CTO/CTE).
-            Our strength is solving cases that have stalled due to repeated rejections, incomplete documents,
-            or technical compliance issues.
+            GreenBridge Consultants is a Ludhiana-based environmental compliance firm helping industrial units
+            in Punjab get their PPCB Consent to Operate (CTO) and Consent to Establish (CTE) approved.
+            We specialise in cases that have been repeatedly rejected — rice mills, dyeing units, textile processors,
+            hosiery manufacturers, and agro-processing units across the Ludhiana belt.
+          </p>
+          <p class="sub" style="margin-top:10px;">
+            We are currently onboarding our first batch of clients at a special introductory rate.
+            If your CTO has been rejected even once, reach out — we will diagnose your case for free.
           </p>
         </div>
-        <a class="btn btn-outline" href="#services"><i class="fa-solid fa-layer-group"></i> Explore Services</a>
+        <a class="btn btn-outline" href="#services"><i class="fa-solid fa-layer-group"></i> Our Services</a>
       </div>
     </div>
   </section>
@@ -510,10 +511,10 @@
       <div class="section-head">
         <div>
           <div class="kicker">Common Pain Points</div>
-          <h2>Struggling with PPCB Approvals?</h2>
+          <h2>Why Does Your PPCB Application Keep Getting Rejected?</h2>
           <p class="sub">
-            If your application keeps getting stuck, you are not alone. These are the most common reasons
-            industrial approvals get delayed in Khanna, Ludhiana, and across Punjab.
+            These are the most common reasons rice mills, dyeing units, and textile processors in Ludhiana
+            face repeated rejections from PPCB.
           </p>
         </div>
       </div>
@@ -521,26 +522,77 @@
       <div class="grid">
         <div class="card">
           <div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-          <h3>Multiple Rejections</h3>
-          <p>Applied several times but still rejected due to unresolved gaps.</p>
+          <h3>Wrong or Missing Documents</h3>
+          <p>Coloured site plan in wrong colours, missing ETP completion certificate, incorrect CA affidavit format — any one of these causes instant rejection.</p>
         </div>
 
         <div class="card">
-          <div class="icon"><i class="fa-solid fa-folder-open"></i></div>
-          <h3>Documentation Hassle</h3>
-          <p>Confusion around required documents, formats, and affidavits.</p>
+          <div class="icon"><i class="fa-solid fa-droplet-slash"></i></div>
+          <h3>ETP Not Functional</h3>
+          <p>PPCB's AEE visits your site during inspection. If your Effluent Treatment Plant is broken or absent, your application is rejected on the spot.</p>
         </div>
 
         <div class="card">
-          <div class="icon"><i class="fa-solid fa-gears"></i></div>
-          <h3>Technical Compliance</h3>
-          <p>ETP, stack height, and pollution control measures not aligned to requirements.</p>
+          <div class="icon"><i class="fa-solid fa-flask"></i></div>
+          <h3>Lab Report Not from Approved Lab</h3>
+          <p>PPCB requires your water test report from their Board laboratory or a PPCB-approved lab only. Reports from other labs are automatically rejected.</p>
         </div>
 
         <div class="card">
           <div class="icon"><i class="fa-solid fa-clock"></i></div>
-          <h3>Time & Money Waste</h3>
-          <p>Repeated attempts without results increase operational and compliance risk.</p>
+          <h3>Portal Errors &amp; Incomplete Filing</h3>
+          <p>The OCMMS portal is complex. Missing water consumption figures, wrong industry category, or incomplete discharge details cause silent rejections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries We Serve -->
+  <section id="industries" aria-label="Industries">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Industries We Serve</div>
+          <h2>Who We Help in Punjab</h2>
+          <p class="sub">We have studied PPCB rejection patterns across these industry types and know exactly what goes wrong in each case.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Rice Mills &amp; Agro Processing</h3>
+          <p>Rice mills above 10 TPD fall under ORANGE category. Common rejection reasons: ETP absent, wrong industry type selected on portal, missing parboiling plant certificate.</p>
+        </div>
+
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-shirt"></i></div>
+          <h3>Dyeing &amp; Textile Units</h3>
+          <p>RED category — highest PPCB scrutiny. Tajpur Road and Bahadur Ke Road dyeing units require coloured wastewater treatment ETP and specific lab reports before filing.</p>
+        </div>
+
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-socks"></i></div>
+          <h3>Hosiery &amp; Garment Manufacturing</h3>
+          <p>ORANGE category. Units with discharge above 2 KLD need full ETP compliance. Focal Point and Hambran Road hosiery units are our primary target area.</p>
+        </div>
+
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-oil-can"></i></div>
+          <h3>Vegetable Oil &amp; Food Processing</h3>
+          <p>Mega Food Park Ladhowal and surrounding food processing units. BOD/COD compliance and proper effluent disposal documentation required.</p>
+        </div>
+
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-industry"></i></div>
+          <h3>Metal &amp; Electroplating Units</h3>
+          <p>RED category. Heavy metal discharge compliance — chromium, zinc, nickel removal documentation. Miller Ganj and Focal Point units speciality.</p>
+        </div>
+
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-recycle"></i></div>
+          <h3>Rubber &amp; Other Manufacturing</h3>
+          <p>GREEN and ORANGE category rubber goods, plywood, and miscellaneous manufacturing units. Faster approvals with correct documentation.</p>
         </div>
       </div>
     </div>
@@ -554,8 +606,8 @@
           <div class="kicker">Services</div>
           <h2>Our Services</h2>
           <p class="sub">
-            Practical, end-to-end support for Consent to Establish (CTE) and Consent to Operate (CTO) approvals,
-            including PPCB rejection help and inspection readiness.
+            End-to-end support from site visit to certificate in hand. We handle everything on the OCMMS portal
+            so you can focus on running your factory.
           </p>
         </div>
         <span class="badge"><i class="fa-solid fa-shield"></i> Transparent, documented process</span>
@@ -566,7 +618,7 @@
           <div class="icon"><i class="fa-solid fa-file-signature"></i></div>
           <h3>CTO/CTE Application Filing</h3>
           <ul>
-            <li>Complete application preparation and online filing</li>
+            <li>Complete OCMMS portal filing</li>
             <li>Document compilation and verification</li>
             <li>Fee calculation and payment guidance</li>
           </ul>
@@ -576,9 +628,9 @@
           <div class="icon"><i class="fa-solid fa-rotate"></i></div>
           <h3>Rejection Resolution</h3>
           <ul>
-            <li>Analysis of rejection reasons</li>
+            <li>Free analysis of rejection letter</li>
             <li>Corrective action planning</li>
-            <li>Re-application strategy</li>
+            <li>Re-application with fixed documents</li>
           </ul>
         </div>
 
@@ -586,9 +638,9 @@
           <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
           <h3>Site Inspection Preparation</h3>
           <ul>
-            <li>Pre-inspection audit</li>
-            <li>ETP and stack compliance check</li>
-            <li>Mock inspection with checklist</li>
+            <li>Pre-inspection audit visit</li>
+            <li>ETP functioning check</li>
+            <li>Checklist for PPCB AEE visit</li>
           </ul>
         </div>
 
@@ -596,89 +648,77 @@
           <div class="icon"><i class="fa-solid fa-folder-tree"></i></div>
           <h3>Documentation Support</h3>
           <ul>
-            <li>Project reports, water balance, process flow</li>
-            <li>CA certificates, affidavits, undertakings</li>
-            <li>Hazardous waste management plans</li>
+            <li>Coloured site plan preparation</li>
+            <li>CA certificates, affidavits</li>
+            <li>Water balance and process flow charts</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-          <h3>Compliance Audit</h3>
+          <h3>ETP Coordination</h3>
           <ul>
-            <li>Complete compliance gap analysis</li>
-            <li>Action plan for corrections</li>
-            <li>Priority-based recommendations</li>
+            <li>Connect with verified ETP vendors</li>
+            <li>Oversee installation to PPCB standards</li>
+            <li>Arrange PPCB-approved lab water testing</li>
           </ul>
         </div>
 
         <div class="card">
-          <div class="icon"><i class="fa-solid fa-person-walking-arrow-right"></i></div>
-          <h3>PPCB Follow-up</h3>
+          <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <h3>Monthly Compliance Retainer</h3>
           <ul>
-            <li>Application tracking</li>
-            <li>Query response management</li>
-            <li>Inspection coordination</li>
+            <li>Monthly ETP records maintenance</li>
+            <li>Quarterly PPCB report filing</li>
+            <li>Handle any PPCB notices or queries</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Success Stories -->
-  <section id="stories" aria-label="Success Stories" class="stories">
+  <!-- First Clients Section (replaces fake success stories) -->
+  <section id="stories" aria-label="First Clients" style="background:var(--panel)">
     <div class="container">
       <div class="section-head">
         <div>
-          <div class="kicker">Success Stories</div>
-          <h2>From Rejection to Approval</h2>
+          <div class="kicker">Our Approach</div>
+          <h2>Currently Onboarding First Clients</h2>
           <p class="sub">
-            Examples of how a structured compliance approach helps industrial units move from repeated rejection
-            to approval. (Client names anonymized.)
+            We are a new firm with a fresh, data-driven approach to PPCB compliance. We studied over 4,000 rejection
+            cases in Ludhiana alone to understand exactly why applications fail. We are offering introductory rates
+            to our first clients in exchange for honest feedback.
           </p>
         </div>
       </div>
 
-      <div class="grid">
-        <div class="card">
-          <div class="icon"><i class="fa-solid fa-industry"></i></div>
-          <h3>Vegetable Oil Manufacturer</h3>
-          <p><strong>Problem:</strong> 4 consecutive rejections</p>
-          <p><strong>Solution:</strong> Complete compliance audit and CTE-first approach</p>
-          <p><strong>Result:</strong> CTO approved in 6 months</p>
-          <div class="story-meta">
-            <span class="pill"><i class="fa-solid fa-tag"></i> Orange/Red category</span>
-            <span class="pill"><i class="fa-solid fa-location-dot"></i> Punjab</span>
-          </div>
+      <div class="first-clients-banner">
+        <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+        <div style="flex:1">
+          <h3>Be Among Our First Clients — Special Introductory Rate</h3>
+          <p>If your CTO has been rejected — even multiple times — we will review your rejection letter for free and tell you exactly what needs to be fixed. No obligation. If you decide to proceed, you get our introductory pricing.</p>
         </div>
-
-        <div class="card">
-          <div class="icon"><i class="fa-solid fa-bolt"></i></div>
-          <h3>Steel Rolling Mill</h3>
-          <p><strong>Problem:</strong> Operating without consent for 2 years</p>
-          <p><strong>Solution:</strong> Regularization through varied consent</p>
-          <p><strong>Result:</strong> Approval in 3 months</p>
-          <div class="story-meta">
-            <span class="pill"><i class="fa-solid fa-tag"></i> High-compliance case</span>
-            <span class="pill"><i class="fa-solid fa-location-dot"></i> Ludhiana region</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="icon"><i class="fa-solid fa-hospital"></i></div>
-          <h3>Hospital (Biomedical Waste)</h3>
-          <p><strong>Problem:</strong> Documentation gaps, 5 rejections</p>
-          <p><strong>Solution:</strong> Document compilation and BMW compliance</p>
-          <p><strong>Result:</strong> Approved in 45 days</p>
-          <div class="story-meta">
-            <span class="pill"><i class="fa-solid fa-tag"></i> BMW compliance</span>
-            <span class="pill"><i class="fa-solid fa-location-dot"></i> Punjab</span>
-          </div>
-        </div>
+        <a class="btn btn-primary" href="#contact" style="flex-shrink:0">
+          <i class="fa-solid fa-paper-plane"></i> Get Free Review
+        </a>
       </div>
 
-      <div style="margin-top:18px;">
-        <a class="btn btn-outline" href="#contact"><i class="fa-solid fa-paper-plane"></i> Discuss Your Case</a>
+      <div class="grid" style="margin-top:16px;">
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-file-magnifying-glass"></i></div>
+          <h3>What we do differently</h3>
+          <p>We use OCMMS portal data to identify exactly which documents cause rejection for your specific industry type — before filing, not after.</p>
+        </div>
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Ludhiana specialists</h3>
+          <p>We focus exclusively on Ludhiana's industrial areas — Tajpur Road, Focal Point, Jagraon, Hambran Road, Bahadur Ke Road. We know the local PPCB office expectations.</p>
+        </div>
+        <div class="card" style="grid-column:span 4">
+          <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Honest pricing</h3>
+          <p>We quote a fixed fee upfront. No hidden charges. No payment without a clear written scope of what we will do and what documents we will prepare.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -690,7 +730,7 @@
         <div>
           <div class="kicker">Process</div>
           <h2>How We Work</h2>
-          <p class="sub">A simple 4-step workflow designed to reduce confusion and improve approval outcomes.</p>
+          <p class="sub">A simple 4-step process from first call to certificate in hand.</p>
         </div>
       </div>
 
@@ -698,44 +738,44 @@
         <div class="card">
           <div class="step"><strong>Step 1</strong><span>Diagnose</span></div>
           <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
-          <h3>Diagnose</h3>
+          <h3>Free Diagnosis</h3>
           <ul>
-            <li>Free initial consultation</li>
-            <li>Review rejection history</li>
-            <li>Site visit and gap analysis</li>
+            <li>Call or WhatsApp us</li>
+            <li>Share your rejection letter</li>
+            <li>We identify exact gaps — free</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="step"><strong>Step 2</strong><span>Plan</span></div>
           <div class="icon"><i class="fa-solid fa-map"></i></div>
-          <h3>Plan</h3>
+          <h3>Clear Action Plan</h3>
           <ul>
-            <li>Detailed corrective action plan</li>
-            <li>Timeline and fee structure</li>
-            <li>Client approval</li>
+            <li>Fixed fee quoted upfront</li>
+            <li>Document list prepared</li>
+            <li>Site visit scheduled</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="step"><strong>Step 3</strong><span>Execute</span></div>
           <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-          <h3>Execute</h3>
+          <h3>We Handle Everything</h3>
           <ul>
-            <li>Document preparation</li>
-            <li>Compliance fixes guidance</li>
-            <li>Application filing</li>
+            <li>All documents prepared</li>
+            <li>OCMMS portal filing done</li>
+            <li>PPCB follow-up managed</li>
           </ul>
         </div>
 
         <div class="card">
-          <div class="step"><strong>Step 4</strong><span>Get Approval</span></div>
+          <div class="step"><strong>Step 4</strong><span>Approved</span></div>
           <div class="icon"><i class="fa-solid fa-certificate"></i></div>
-          <h3>Get Approval</h3>
+          <h3>Certificate Delivered</h3>
           <ul>
-            <li>PPCB follow-up</li>
-            <li>Inspection support</li>
-            <li>Certificate delivery</li>
+            <li>CTO certificate in your hands</li>
+            <li>Ongoing retainer available</li>
+            <li>Renewal reminder 3 months early</li>
           </ul>
         </div>
       </div>
@@ -748,10 +788,10 @@
       <div class="section-head">
         <div>
           <div class="kicker">Why Choose Us</div>
-          <h2>Why Industries Trust Us</h2>
+          <h2>Why Industries in Ludhiana Trust GreenBridge</h2>
           <p class="sub">
-            Clients choose GreenBridge for clarity, discipline, and case handling that is built around real PPCB
-            expectations — especially in complex rejection histories.
+            We built this business by studying thousands of PPCB rejections in Ludhiana. We know
+            what the PPCB regional office expects — and we build your application around that.
           </p>
         </div>
       </div>
@@ -760,22 +800,27 @@
         <div class="card">
           <h3>What we prioritize</h3>
           <ul class="checklist">
-            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Industry-Specific Expertise:</strong> Specialized in Orange and Red category industries.</span></li>
-            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Rejection-to-Approval Specialists:</strong> We understand why applications fail and how to fix them.</span></li>
-            <li><i class="fa-solid fa-circle-check check"></i><span><strong>End-to-End Support:</strong> From documentation to final approval and certificate delivery.</span></li>
-            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Transparent Process:</strong> No hidden fees, regular updates, clear next steps.</span></li>
-            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Proven Track Record:</strong> Structured approach that improves approval probability.</span></li>
+            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Rice Mills &amp; Dyeing Specialists:</strong> We understand the specific compliance needs of Ludhiana's most common industries.</span></li>
+            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Rejection Analysis First:</strong> We read your rejection letter before quoting. We fix the actual problem, not guess.</span></li>
+            <li><i class="fa-solid fa-circle-check check"></i><span><strong>OCMMS Portal Experts:</strong> We handle the entire online filing on pbocmms.nic.in — you do not touch the portal.</span></li>
+            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Transparent Fixed Fees:</strong> Price agreed upfront. No surprise charges after work starts.</span></li>
+            <li><i class="fa-solid fa-circle-check check"></i><span><strong>Monthly Retainer Available:</strong> After approval we maintain your records so you never face a rejection again.</span></li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Looking for an Industrial Approval Consultant in Khanna / Ludhiana?</h3>
+          <h3>Get a free review of your rejection</h3>
           <p style="color:var(--muted); font-size:13px; margin:8px 0 14px;">
-            If you need help with Consent to operate Punjab applications, CTO approval consultant support,
-            or PPCB rejection help, share your industry details and the latest rejection/query notes.
+            Share your last PPCB rejection letter with us. We will tell you in plain language what is missing
+            and what it will take to get approved. No cost, no obligation.
           </p>
-          <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-headset"></i> Book Free Consultation</a>
-          <a class="btn btn-outline" href="#services" style="margin-left:10px;"><i class="fa-solid fa-list-check"></i> See Deliverables</a>
+          <a class="btn btn-primary" href="https://wa.me/917814818513?text=Hello%20GreenBridge%2C%20I%20want%20a%20free%20review%20of%20my%20PPCB%20rejection." target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Send Rejection Letter on WhatsApp
+          </a>
+          <br><br>
+          <a class="btn btn-outline" href="#contact">
+            <i class="fa-solid fa-headset"></i> Book Free Consultation
+          </a>
         </div>
       </div>
     </div>
@@ -788,129 +833,139 @@
         <div>
           <div class="kicker">FAQ</div>
           <h2>Frequently Asked Questions</h2>
-          <p class="sub">Quick answers before you contact us for a customized quote.</p>
+          <p class="sub">Answers to the most common questions from factory owners in Ludhiana.</p>
         </div>
       </div>
 
       <details>
-        <summary>How long does the approval process take?</summary>
-        <p>Typically 2–6 months depending on your industry category and current compliance status.</p>
+        <summary>How long does the CTO approval process take?</summary>
+        <p>Typically 2–4 months from the date of correct application submission. If your ETP is functional and documents are complete, PPCB's target is 30 days for scrutiny. Delays happen when documents are incomplete or inspection is pending — we manage this entire process for you.</p>
       </details>
 
       <details>
-        <summary>What industries do you serve?</summary>
-        <p>We specialize in Orange and Red category industries including vegetable oil, steel, hospitals, hotels, and manufacturing units.</p>
+        <summary>Which industries do you serve in Ludhiana?</summary>
+        <p>We primarily serve rice mills, dyeing and textile units, hosiery manufacturers, vegetable oil and agro processing units, rubber goods manufacturers, and metal/electroplating units. These are Orange and Red category industries under PPCB — the most common in Ludhiana's Tajpur Road, Focal Point, Jagraon, and Hambran Road industrial areas.</p>
       </details>
 
       <details>
-        <summary>Do you guarantee approval?</summary>
-        <p>While we cannot guarantee PPCB approval, our systematic approach significantly increases your chances. We have successfully helped clients with multiple rejections.</p>
+        <summary>My CTO has been rejected 3 times. Can you still help?</summary>
+        <p>Yes — and this is exactly the situation we specialise in. Multiple rejections usually mean the same document gap is being missed every time. We read every previous rejection letter, identify the exact reason, and fix it before re-filing. Share your rejection letters with us on WhatsApp and we will diagnose for free.</p>
       </details>
 
       <details>
         <summary>What are your fees?</summary>
-        <p>Fees vary based on industry category, scope of work, and current compliance status. Contact us for a customized quote.</p>
+        <p>We charge ₹25,000–40,000 for complete CTO compliance filing depending on your industry category and current situation. This includes site visit, document preparation, portal filing, and follow-up until approval. After approval, a monthly retainer of ₹5,000–8,000 keeps your compliance maintained. We quote a fixed price upfront — no surprises.</p>
+      </details>
+
+      <details>
+        <summary>Do I need to install a new ETP before applying?</summary>
+        <p>It depends on your current situation. If you have a functioning ETP, we can often work with it. If the ETP is broken or absent, it must be fixed before PPCB inspection — we can connect you with reliable ETP vendors and coordinate the installation. We will advise you clearly after the free site visit.</p>
       </details>
 
       <details>
         <summary>Do you offer free consultation?</summary>
-        <p>Yes. We offer a free initial consultation to understand your situation and provide preliminary guidance.</p>
+        <p>Yes. We offer a free review of your rejection letter and a free initial consultation to understand your situation. Call or WhatsApp us at +91-7814818513 — we respond same day.</p>
       </details>
     </div>
   </section>
 
- <!-- Contact -->
-<section id="contact" aria-label="Contact">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="kicker">Contact</div>
-        <h2>Get Your Approval Today</h2>
-        <p class="sub">
-          Share your industry type, current status, and any rejection history. We will respond with a clear next step.
-        </p>
-      </div>
-    </div>
-
-    <div class="contact-wrap">
-      <div class="card">
-        <h3 style="margin-top:0;">Free Consultation Form</h3>
-
-        <!-- FIXED Formspree form with correct redirect -->
-        <form action="https://formspree.io/f/xreyjbwp" method="POST">
-          <input type="hidden" name="_subject" value="New Consultation Lead - GreenBridge Consultants">
-          <!-- IMPORTANT: This is the correct format for redirect -->
-          <input type="hidden" name="_next" value="https://rishabh27-blip.github.io/greenbridge-site/thank-you.html">
-
-          <div>
-            <label for="name">Name</label>
-            <input id="name" name="name" placeholder="Your full name" required />
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@company.com" required />
-          </div>
-
-          <div>
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" placeholder="+91-7814818513" required />
-          </div>
-
-          <div>
-            <label for="industry">Industry Type</label>
-            <select id="industry" name="industry" required>
-              <option value="" selected disabled>Select your industry</option>
-              <option>Vegetable Oil / Food Processing</option>
-              <option>Steel / Metal</option>
-              <option>Hospital / Biomedical Waste</option>
-              <option>Hotel / Hospitality</option>
-              <option>Manufacturing</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us your current situation (CTE/CTO), rejection notes, and timeline."></textarea>
-          </div>
-
-          <button class="btn btn-primary" type="submit">
-            <i class="fa-solid fa-paper-plane"></i> Request Consultation
-          </button>
-
-          <p style="margin:10px 0 0; font-size:12px; color:var(--muted);">
-            By submitting, you agree to be contacted by GreenBridge Consultants.
+  <!-- Contact -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Contact</div>
+          <h2>Get Your CTO Approved</h2>
+          <p class="sub">
+            Tell us your industry type and current PPCB status. We will respond within the same day with a clear next step.
           </p>
-        </form>
+        </div>
       </div>
 
-      <div class="contact-details">
-        <div class="info">
-          <i class="fa-solid fa-phone"></i>
-          <div><strong style="color:#0b1220;">Phone</strong><br>+91-7814818513</div>
+      <div class="contact-wrap">
+        <div class="card">
+          <h3 style="margin-top:0;">Free Consultation Form</h3>
+
+          <form action="https://formspree.io/f/xreyjbwp" method="POST">
+            <input type="hidden" name="_subject" value="New Consultation Lead - GreenBridge Consultants">
+            <input type="hidden" name="_next" value="https://rishabh27-blip.github.io/greenbridge-site/thank-you.html">
+
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your full name" required />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            </div>
+
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required />
+            </div>
+
+            <div>
+              <label for="industry">Industry Type</label>
+              <select id="industry" name="industry" required>
+                <option value="" selected disabled>Select your industry</option>
+                <option>Rice Mill / Agro Processing</option>
+                <option>Dyeing / Textile Processing</option>
+                <option>Hosiery / Garment Manufacturing</option>
+                <option>Vegetable Oil / Food Processing</option>
+                <option>Metal / Electroplating</option>
+                <option>Rubber / Manufacturing</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message">Describe your situation</label>
+              <textarea id="message" name="message" placeholder="How many times has your CTO been rejected? Do you have an ETP installed? What does your rejection letter say? Any PPCB notice received?"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Request Free Consultation
+            </button>
+
+            <p style="margin:10px 0 0; font-size:12px; color:var(--muted);">
+              By submitting, you agree to be contacted by GreenBridge Consultants. We respond same day.
+            </p>
+          </form>
         </div>
 
-        <div class="info">
-          <i class="fa-solid fa-envelope"></i>
-          <div><strong style="color:#0b1220;">Email</strong><br>consultantsgreenbridge@gmail.com</div>
-        </div>
+        <div class="contact-details">
+          <div class="info">
+            <i class="fa-solid fa-phone"></i>
+            <div><strong style="color:#0b1220;">Phone / WhatsApp</strong><br>+91-7814818513</div>
+          </div>
 
-        <div class="info">
-          <i class="fa-solid fa-location-dot"></i>
-          <div><strong style="color:#0b1220;">Address</strong><br>Punjab, India</div>
-        </div>
+          <div class="info">
+            <i class="fa-solid fa-envelope"></i>
+            <div><strong style="color:#0b1220;">Email</strong><br>consultantsgreenbridge@gmail.com</div>
+          </div>
 
-        <div class="info">
-          <i class="fa-solid fa-clock"></i>
-          <div><strong style="color:#0b1220;">Business Hours</strong><br>Mon–Sat, 9:00 AM – 6:00 PM</div>
-        </div>
+          <div class="info">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><strong style="color:#0b1220;">Location</strong><br>Ludhiana, Punjab — serving Tajpur Road, Focal Point, Jagraon, Hambran Road &amp; surrounding industrial areas</div>
+          </div>
 
-        <div class="map" aria-label="Map placeholder">Map placeholder (embed Google Map here)</div>
+          <div class="info">
+            <i class="fa-solid fa-clock"></i>
+            <div><strong style="color:#0b1220;">Business Hours</strong><br>Mon–Sat, 9:00 AM – 6:00 PM</div>
+          </div>
+
+          <a href="https://wa.me/917814818513?text=Hello%20GreenBridge%2C%20I%20need%20help%20with%20my%20PPCB%20CTO%20application."
+             target="_blank"
+             class="btn btn-primary"
+             style="width:100%; justify-content:center; border-radius:14px; padding:16px;">
+            <i class="fa-brands fa-whatsapp" style="font-size:20px;"></i>
+            Chat on WhatsApp — Fastest Response
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Footer -->
   <footer aria-label="Footer">
@@ -919,14 +974,15 @@
         <div>
           <strong style="color:#fff; font-size:16px;">GreenBridge Consultants</strong>
           <div class="small" style="margin-top:8px;">
-            Environmental compliance consultant helping Punjab industries with PPCB consent approvals (CTO/CTE),
-            including complex cases with multiple rejections.
+            Environmental compliance consultants helping Punjab industries — especially rice mills, dyeing units,
+            and textile processors — get their PPCB CTO/CTE approved. Based in Ludhiana.
           </div>
 
           <div class="social" aria-label="Social links">
             <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="WhatsApp" target="_blank"
+               href="https://wa.me/917814818513"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
 
@@ -934,8 +990,8 @@
           <strong style="color:#fff;">Quick Links</strong>
           <div class="small" style="margin-top:10px; display:grid; gap:8px;">
             <a href="#about">About</a>
+            <a href="#industries">Industries We Serve</a>
             <a href="#services">Services</a>
-            <a href="#stories">Success Stories</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
@@ -943,27 +999,28 @@
         <div>
           <strong style="color:#fff;">Disclaimer</strong>
           <div class="small" style="margin-top:10px;">
-            Results may vary based on individual case. We provide professional consultancy services, but final approval authority rests with PPCB.
+            Results may vary based on individual case. GreenBridge Consultants provides professional
+            consultancy services. Final approval authority rests with the Punjab Pollution Control Board (PPCB).
           </div>
         </div>
       </div>
 
       <div class="small" style="margin-top:18px; border-top:1px solid rgba(255,255,255,.12); padding-top:14px;">
-        © <span id="year"></span> GreenBridge Consultants. All rights reserved.
+        &copy; <span id="year"></span> GreenBridge Consultants, Ludhiana, Punjab. All rights reserved.
       </div>
     </div>
   </footer>
 
- <!-- Floating WhatsApp Button - Premium Version -->
-<a href="https://wa.me/917814818513?text=Hello%20GreenBridge%2C%20I'm%20interested%20in%20your%20PPCB%20consulting%20services."
-   style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50px; padding: 12px 20px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 9999; display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;"
-   target="_blank"
-   onmouseover="this.style.transform='scale(1.05)'"
-   onmouseout="this.style.transform='scale(1)'"
-   aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp" style="font-size: 24px;"></i>
-  <span style="font-size: 14px;">Chat with us</span>
-</a>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917814818513?text=Hello%20GreenBridge%2C%20I%20need%20help%20with%20my%20PPCB%20CTO%20application."
+     style="position:fixed; bottom:20px; right:20px; background-color:#25D366; color:white; border-radius:50px; padding:12px 20px; box-shadow:0 4px 15px rgba(37,211,102,0.4); z-index:9999; display:flex; align-items:center; gap:10px; text-decoration:none; font-weight:600; transition:all 0.3s ease;"
+     target="_blank"
+     onmouseover="this.style.transform='scale(1.05)'"
+     onmouseout="this.style.transform='scale(1)'"
+     aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:24px;"></i>
+    <span style="font-size:14px;">WhatsApp Us</span>
+  </a>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
